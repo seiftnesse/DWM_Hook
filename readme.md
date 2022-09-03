@@ -10,3 +10,12 @@ auto dwRender = FindPattern("d2d1.dll", PBYTE("\x48\x8D\x05\x00\x00\x00\x00\x33\
 ```c++
 pFontFactory->CreateFontWrapper(pD3DXDevice, L"Arial", &pFontWrapper);
 ```
+## You can use [Extreme Injector ](https://github.com/master131/ExtremeInjector/releases/tag/v3.7.3)
+
+![injector](https://github.com/rlybasic/DWM_Hook/blob/main/img/inj.jpg)
+
+![type](https://github.com/rlybasic/DWM_Hook/blob/main/img/type.jpg)
+
+## Demonstration
+
+![type](https://github.com/rlybasic/DWM_Hook/blob/main/img/overlay.jpg)
