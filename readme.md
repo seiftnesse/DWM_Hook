@@ -19,3 +19,12 @@ pFontFactory->CreateFontWrapper(pD3DXDevice, L"Arial", &pFontWrapper);
 ## Demonstration
 
 ![type](https://github.com/rlybasic/DWM_Hook/blob/main/img/overlay.jpg)
+
+##To update pattern:
+
+```c++
+lea     rax, ??_7DrawingContext@@6BIMILRefCount@@@ ; const DrawingContext::`vftable'{for `IMILRefCount'}
+xor     ebp, ebp
+lea     rsi, [rcx+8]
+mov     [rcx], rax
+```
