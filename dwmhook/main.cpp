@@ -353,6 +353,11 @@ UINT WINAPI MainThread(PVOID)
 		return sig = sig + *reinterpret_cast<PULONG>(sig + 0x3) + 0x7;
 	};
 
+	//lea     rax, ??_7DrawingContext@@6BIMILRefCount@@@ ; const DrawingContext::`vftable'{for `IMILRefCount'}
+	//xor     ebp, ebp
+	//lea     rsi, [rcx+8]
+	//mov     [rcx], rax
+	
 	auto dwRender = FindPattern("d2d1.dll", PBYTE("\x48\x8D\x05\x00\x00\x00\x00\x33\xED\x48\x8D\x71\x08"), "xxx????xxxxxx");
 
 	if (dwRender)
